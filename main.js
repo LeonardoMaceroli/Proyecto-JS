@@ -8,7 +8,7 @@ let partidasJugadas = 0;
 let jugarDeNuevo = 'si';
 
 
-alert('Bienbenido al clasico juego de piedra, papel o tijeras. Juega tanto como desees')
+alert('Bienvenido al clasico juego de piedra, papel o tijeras. Juega tanto como desees')
 
 do {
     if (jugarDeNuevo === 'si') {
@@ -20,7 +20,7 @@ do {
         cpu = aleatorio();
 
         while (usuario !== 0 && usuario !== 1 && usuario !== 2 && usuario !== 3) {
-            usuario = Number(prompt('Entrada no válida. Elija con numeros: \n' +
+            usuario = Number(prompt('Entrada no valida. Elija con numeros: \n' +
             '1- PIEDRA\n' +
             '2- PAPEL\n' +
             '3- TIJERAS\n' +
@@ -52,7 +52,7 @@ do {
                     alert(tipo + ' TIJERAS');
                     break;
                 default:
-                    alert(tipo + ' opcion no valida');
+                    alert(tipo + ' Opcion no valida');
             }
         }
 
@@ -79,8 +79,8 @@ do {
         }
     }
 
-} while (confirm('¿volver a jugar?'));
+} while (confirm('¿Volver a jugar?'));
 
-alert('Gracias por jugar. Hasta la proxmia');
+alert('Gracias por jugar. Hasta la proxima');
 
 alert('Estadisticas: \nPartidas jugadas: ' + partidasJugadas + '\nVictorias: ' + victorias + '\nDerrotas: ' + derrotas + '\nEmpates: ' + empates);
